@@ -1,0 +1,47 @@
+import { Card, CardContent } from "@/components/ui/card"; import { Button } from "@/components/ui/button";
+
+export default function FusionByTanish() { return ( <div className="min-h-screen bg-gradient-to-br from-purple-100 to-blue-50 p-6"> <header className="text-center py-8"> <h1 className="text-4xl font-bold text-purple-700">Fusion by Tanish</h1> <p className="mt-2 text-gray-600">Innovation | Creativity | Future</p> </header>
+
+<main className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+    <Card className="shadow-lg rounded-2xl">
+      <CardContent className="p-6">
+        <h2 className="text-2xl font-semibold text-purple-600 mb-2">About Us</h2>
+        <p className="text-gray-700 text-base">
+          Fusion by Tanish is a hub of innovation and creativity, designed to
+          bring unique projects and futuristic ideas to life. Our vision is to
+          blend technology and tradition for a better tomorrow.
+        </p>
+      </CardContent>
+    </Card>
+
+    <Card className="shadow-lg rounded-2xl">
+      <CardContent className="p-6">
+        <h2 className="text-2xl font-semibold text-purple-600 mb-2">Projects</h2>
+        <p className="text-gray-700 text-base">
+          Explore cutting-edge projects like <strong>SEVAK</strong> for safety,
+          smart chess boards for learning, and AI-powered tools for everyday
+          problem solving.
+        </p>
+      </CardContent>
+    </Card>
+
+    <Card className="shadow-lg rounded-2xl">
+      <CardContent className="p-6">
+        <h2 className="text-2xl font-semibold text-purple-600 mb-2">Contact</h2>
+        <p className="text-gray-700 text-base mb-4">
+          Have an idea or want to collaborate? Reach out to us!
+        </p>
+        <Button className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-xl">
+          Get in Touch
+        </Button>
+      </CardContent>
+    </Card>
+  </main>
+
+  <footer className="text-center py-6 mt-8 border-t border-gray-200">
+    <p className="text-gray-500 text-sm">© 2025 Fusion by Tanish. All rights reserved.</p>
+  </footer>
+</div>
+
+); }
+
